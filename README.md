@@ -1,7 +1,21 @@
-# P23_CRUD_H2_lombok_security_jwt
-![image](https://github.com/JoseMarin/P23_CRUD_H2_lombok_security_jwt/assets/16636086/9246e371-0f55-4909-9f04-cf3901c316f8)
-```
-Spring Boot FRamework version: 3.0.6
-JDK version: 17
-BBDD: H2
-```
+# Hackathon Fundació Esplai | T-Systems | Microsoft 2023
+## Back-end challenge for the 2023 Hackathon.
+
+### Utilised Technologies
+#### Spring Framework
+For the back-end functionality, API, and security.
+#### MySQL
+As the database service.
+
+### Routes
+/
+Welcome page
+
+/login
+Routes for user login
+
+/user/all
+Route for show all users
+
+/user/{email}
+Route for show user by email
