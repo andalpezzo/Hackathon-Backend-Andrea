@@ -1,7 +1,7 @@
-# Hackathon Fundació Esplai | T-Systems | Microsoft 2023
-## Back-end challenge for the 2023 Hackathon.
+# Hackathon Fundació Esplai
+## Back-end challenge by Andrea Dal Pezzo.
 
-### Utilised Technologies
+### Utilized Technologies
 #### Spring Framework
 For the back-end functionality, API, and security.
 #### MySQL
