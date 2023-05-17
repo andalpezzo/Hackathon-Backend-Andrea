@@ -29,8 +29,7 @@ public class SecurityConfig {
     private static final String[] SECURED_URLs = {"/books/**"};
 
     private static final String[] UN_SECURED_URLs = {
-            //"/books/all",
-            "/books/book/{id}",
+            "/**",
             "/users/**",
             "/login/**"
     };

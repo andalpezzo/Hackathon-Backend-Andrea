@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class WelcomeController {
 	
-	@GetMapping("/wellcome")
-	public void welcomeUser() {
-		System.out.println("Welcome Login & Register server");
-		System.out.println("Created by Andrea Dal Pezzo");
+	@GetMapping("/")
+	public String welcomeUser() {
+		String wellcome = "Welcome Login & Register server (Created by Andrea Dal Pezzo)";
+		return wellcome;
 	}
 }
