@@ -20,7 +20,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import com.example.demo.jwt.JWTAuthenticationFilter;
 
 /**
- * @author Samson Effes
+ * @author Andrea Dal Pezzo
  */
 @Configuration
 @EnableWebSecurity

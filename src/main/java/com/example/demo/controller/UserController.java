@@ -1,9 +1,13 @@
-package com.example.demo.user;
+package com.example.demo.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.example.demo.user.User;
+import com.example.demo.user.UserRecord;
+import com.example.demo.user.UserService;
 
 import java.util.List;
 

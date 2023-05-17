@@ -1,7 +1,7 @@
 package com.example.demo.user;
 
 /**
- * @author Jose Marin
+ * @author Andrea Dal Pezzo
  */
 
 import jakarta.transaction.Transactional;
@@ -25,8 +25,8 @@ public class UserService implements IUserService {
 
     @Override
     public User add(User user) {
-        User theUser = userRepository.findByEmail(user.getEmail());
-        if (theUser.getEmail().contains(null)){
+        Optional<User> theUser = userRepository.findByEmail(user.getEmail());
+        if (theUser.isPresent()){
             throw new UserAlreadyExistsException("A user with " +user.getEmail() +" already exists");
         }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
@@ -41,7 +41,7 @@ public class UserService implements IUserService {
                         user.getId(),
                         user.getUsername(),
                         user.getEmail(),
-                		user.getPassword(), null)).collect(Collectors.toList());
+                		user.getPassword())).collect(Collectors.toList());
     }
 
     @Override
@@ -52,13 +52,13 @@ public class UserService implements IUserService {
 
     @Override
     public User getUser(String email) {
-        /*return userRepository.findByEmail(email)
-                .orElseThrow(() -> new UserNotFoundException("User not found"));*/
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> new UserNotFoundException("User not found"));
     }
 
     @Override
     public User update(User user) {
-        user.setRoles(user.getRoles());
+        user.setId(user.getId());
         return userRepository.save(user);
     }
 }

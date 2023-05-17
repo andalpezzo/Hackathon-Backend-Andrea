@@ -1,3 +1,3 @@
 package com.example.demo.user;
 
-public record UserRecord(Long id, String firstName, String lastName, String email, String password){}
+public record UserRecord(Long id, String username, String email, String password){}
