@@ -8,14 +8,14 @@ For the back-end functionality, API, and security.
 As the database service.
 
 ### Routes
-/< /br>
+/<br>
 Welcome page
 
-/login< /br>
+/login<br>
 Routes for user login
 
-/user/all< /br>
+/user/all<br>
 Route for show all users
 
-/user/{email}< /br>
+/user/{email}<br>
 Route for show user by email
